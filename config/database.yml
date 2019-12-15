@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  adapter: mysql2
+  database: bookstore_development
+  username: bookstore
+  password: bookstore
+
+test:
+  <<: *default
+  adapter: mysql2
+  database: bookstore_test
+  username: bookstore
+  password: bookstore
+
+production:
+  <<: *default
+  database: db/production.sqlite3
