@@ -1,2 +1,2 @@
-# practice_ruby
- This is a book store application.
+# Description
+ This is a book store application using rails.
